@@ -2,7 +2,7 @@
 
 ![Design preview for the FAQ accordion card coding challenge](./design/desktop-preview.jpg)
 
-## Table of contents
+## Table of contents 
 
 - [Overview](#overview)
   - [The challenge](#the-challenge)
