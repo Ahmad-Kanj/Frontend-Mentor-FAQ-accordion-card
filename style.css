@@ -55,6 +55,8 @@ body {
 }
 
 .ques {
+  font-weight: 700;
+  color: hsl(240, 6%, 50%);
   display: grid;
   grid-template-columns: 1fr auto;
   margin-bottom: 1rem;
