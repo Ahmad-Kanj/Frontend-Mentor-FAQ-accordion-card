@@ -1,0 +1,150 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Kumbh Sans", sans-serif;
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(
+    0deg,
+    hsl(240, 73%, 65%) 0%,
+    hsl(273, 75%, 66%) 100%
+  );
+}
+.womanMobile {
+  display: none;
+}
+.card {
+  padding-top: 1rem;
+  border-radius: 2rem;
+  background: white;
+  display: flex;
+}
+
+.content {
+  width: 25rem;
+  margin: 4rem;
+  text-align: left;
+}
+
+.content h1 {
+  margin-bottom: 2rem;
+}
+
+.question {
+  max-width: 30rem;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid hsl(240, 49%, 92%);
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .question:hover {
+    cursor: pointer;
+  }
+  .question:hover .ques {
+    color: hsl(14, 88%, 65%);
+  }
+}
+
+.ques {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  margin-bottom: 1rem;
+}
+
+.answer {
+  padding-bottom: 1rem;
+  line-height: 1rem;
+  display: none;
+  color: hsl(240, 6%, 50%);
+}
+
+.figure {
+  display: flex;
+  overflow: hidden;
+  background-image: url(./images/bg-pattern-desktop.svg);
+  background-size: 300%;
+  background-repeat: no-repeat;
+  padding-right: 1rem;
+  background-position: 102% 70%;
+}
+
+.woman {
+  align-self: center;
+  margin-left: -5rem;
+}
+
+.box {
+  position: absolute;
+  transform: translate(-50%, 100%);
+}
+
+.arrow {
+  align-self: flex-end;
+}
+
+.myClass {
+  display: block;
+}
+
+.rotate {
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+.quesColor {
+  color: hsl(238, 29%, 16%);
+  font-weight: 700;
+}
+
+@media screen and (max-width: 1150px) {
+  .card {
+    margin: 7rem 0 5rem 0;
+    padding: 0 2rem 2rem 2rem;
+    max-width: 90vw;
+
+    flex-direction: column;
+  }
+
+  .content {
+    max-width: 75vw;
+    margin: 0;
+    padding: 0;
+  }
+
+  .content h1 {
+    text-align: center;
+  }
+
+  .woman {
+    display: none;
+  }
+  .box {
+    display: none;
+  }
+
+  .figure {
+    background-size: 100%;
+    background-position: 0% 110%;
+    overflow: visible;
+    flex-direction: column;
+  }
+
+  .womanMobile {
+    margin-top: -6.7rem;
+    padding-bottom: 2rem;
+    display: block;
+    align-self: center;
+    justify-content: center;
+  }
+}
